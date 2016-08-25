@@ -1,4 +1,6 @@
 <?php
+echo 'hi';
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -105,4 +107,3 @@
     <script src="app.js"></script>
   </body>
 </html>
-?>
