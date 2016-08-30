@@ -51,7 +51,7 @@
                 This is just placeholder in case we need to fit something else here
               </div>
               <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Another button</a>
+                <a href="#" class="mdl-button">Test</a>
               </div>
             </div>
           </section>
