@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles.css">
     <style>
     .bg1 {
-      color: white;
+      color: black;
       background-image: url("http://www.newcitymed.com/wp-content/uploads/Newcity_Medical_footer-512x256.jpg");
     }
     .bg2 {
