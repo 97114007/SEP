@@ -81,11 +81,10 @@ Additional Details:
 <br></br>
 <textarea rows="6" cols="50" placeholder="Please enter any other information to identify your lost item"></textarea>
 </div>
-<div><input type="submit">
-<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+
+<input type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
   Submit
-</button>
 </input>
-</div>
+
 </body>
 </html>
