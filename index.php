@@ -42,7 +42,7 @@
                 Have you lost an item? Lodge a "Lost Item" application in case we've found it.
               </div>
               <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Lodge lost item</a>
+                <a href="lostitem.php" class="mdl-button">Lodge lost item</a>
               </div>
             </div>
             <div class="bg2 mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--4-col-tablet mdl-cell--4-col-phone">
