@@ -18,11 +18,30 @@
 	Category:*
 	<select>
 		<option value="" disabled selected>Select</option>
-		<option value="categorydatavalue1">CategoryName1</option>
-		<option value="categorydatavalue2">CategoryName2</option>
-		<option value="categorydatavalue3">CategoryName3</option>
-		<option value="categorydatavalue4">CategoryName4</option>
-		<option value="categorydatavalue5">CategoryName5</option>
+		<option value="MobilePhone">Mobile Phone</option>
+		<option value="WalletPurse">Wallet/Purse</option>
+		<option value="Laptop">Laptop</option>
+		<option value="IdentificationCard">Identification card</option>
+		<option value="TravelCard">Travel Card</option>
+		<option value="Camera">Camera</option>
+		<option value="MusicPlayer ">Music player (e.g. ipod)</option>
+		<option value="StorageDevices">Storage devices (e.g. USB, hard drives, SD cards)</option>
+		<option value="ElectronicAccessories">Electronic accessories (earphones, charges)</option>
+		<option value="Clothing">Clothing</option>
+		<option value="Jewellery">Jewellery</option>
+		<option value="GlassesSunglasses">Glasses & sunglasses</option>
+		<option value="Keys">Keys</option>
+		<option value="Bags">Bags & Luggage</option>
+		<option value="Books">Books (e.g. literature, textbooks, notebooks)</option>
+		<option value="Money">Currency & money</option>
+		<option value="MiscElectronicDevices">Miscellaneous Electronic Devices</option>
+		<option value="HouseholdTools">Household Items & Tools</option>
+		<option value="Mail">Mail & Parcels</option>
+		<option value="Toy">Toy</option>
+		<option value="Medical">Medical (e.g. medicine, epipen, inhaler)</option>
+		<option value="SportingGoods">Sporting Goods</option>
+		<option value="MusicalInstruments">Musical Instruments</option>
+		<option value="PersonalAccessories">Personal Accessories (e.g. umbrellas)</option>
 	</select>
 </div>
 <div>
