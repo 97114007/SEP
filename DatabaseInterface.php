@@ -55,7 +55,7 @@
 
   function sendRecentItems($UserID) {
       $UserID = bin2hex($UserID);
-      $queryString = "SELECT LostItem.Category, LostItem.SubCategory, LostItem.Colour, LostItem.DayLost, LostItem.LocationLost, Claim.Status FROM LostItem, Claim WHERE Claim.LostItemID=LostItem.LostItemID AND Claim.UserID=UNHEX('".$UserID."') ORDER BY LostItem.DayLost DESC LIMIT 4";
+      $queryString = "SELECT LostItem.Category, LostItem.SubCategory, LostItem.Colour, LostItem.DayLost, LostItem.LocationLost, Claim.ClaimStatus FROM LostItem, Claim WHERE Claim.LostItemID=LostItem.LostItemID AND Claim.UserID=UNHEX('".$UserID."') ORDER BY LostItem.DayLost DESC LIMIT 4";
       $q = doQuery($queryString);
       if (!$q) {
          sendError();
