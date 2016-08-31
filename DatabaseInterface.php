@@ -18,7 +18,7 @@
   function checkLoginCorrect($ID, $Pass) {
       $ID = bin2hex($ID);
       $Pass = bin2hex($Pass);
-      $q = doQuery("SELECT UserID FROM User WHERE UserID=UNHEX('".$ID."') AND ClearPassword=UNHEX('".$Pass."')");
+      $q = doQuery("SELECT UserID FROM User WHERE UserID=UNHEX('".$ID."') AND UserPassword=UNHEX('".$Pass."')");
       if (!$q) {
          return false;
       }
