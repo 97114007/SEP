@@ -33,7 +33,7 @@
       $Location = bin2hex($Location);
       $Date = bin2hex($Date);
       $Comment = bin2hex($Comment);
-      $q = doQuery("INSERT INTO LostItem (Category, SubCategory, Colour, DayLost, LocationLost, Comment) VALUES(UNHEX('".$Cat."'), UNHEX('".$SubCat."'), UNHEX('".$Colour."'), UNHEX('".$Date."'), UNHEX('".$Location."'), UNHEX('".$Comment."'))");
+      $q = doQuery("INSERT INTO LostItem (Category, SubCategory, Colour, DayLost, LocationLost, Comments) VALUES(UNHEX('".$Cat."'), UNHEX('".$SubCat."'), UNHEX('".$Colour."'), UNHEX('".$Date."'), UNHEX('".$Location."'), UNHEX('".$Comment."'))");
       $q2 = doQuery("SELECT LAST_INSERT_ID() FROM LostItem");
       if (!$q || !$q2) {
          return -1;
