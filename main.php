@@ -2,8 +2,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <title>My Lost Items</title>
+      <!--link to the master css stylesheet-->
       <link rel="stylesheet" href="styles.css">
+      <!--link to master javascript file-->
       <script src="functions.js"></script>
+      <!--link to google material design icon library-->
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body>
