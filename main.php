@@ -9,6 +9,8 @@
       <script src="functions.js"></script>
       <!--link to google material design icon library-->
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <!--this makes sure the website scales when viewed on different displays-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
       <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
