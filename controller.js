@@ -96,7 +96,7 @@ User.prototype = {
 		
 	},
 	lodgeLostItem:function() {
-		window.location="lodge-form.php";
+		window.location="lostitemform.php";
 	}
 };
 
