@@ -1,3 +1,30 @@
+/*
+`* ORIGINAL CSS
+ */
+div.placeholder {
+  padding: 5px;
+  border: 1px solid #cccccc;
+  background-color: #eeeeee;
+  color:#bbbbbb;
+  margin: 15px 15px 15px 15px;
+  /*text-align: center;*/
+}
+
+div.addButton {
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 0;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  z-index: 900;
+}
+
+
+b {
+  color:#ff6f59;
+  font-weight: bold;
+}
 /**
  * material-design-lite - Material Design Components in CSS, JS and HTML
  * @version v1.2.0
@@ -627,7 +654,8 @@ body {
  * Source: http://weblog.west-wind.com/posts/2015/Jan/12/main-HTML5-Tag-not-working-in-Internet-Explorer-91011
  */
 main {
-  display: block; }
+  display: block; 
+  background-color: #f4f9f9;}
 
 /*
 * Apply no display to elements with the hidden attribute.
@@ -905,7 +933,7 @@ p {
   margin-bottom: 16px; }
 
 a {
-  color: rgb(255,64,129);
+  color: white;
   font-weight: 500; }
 
 blockquote {
@@ -919,9 +947,9 @@ blockquote {
   blockquote:before {
     position: absolute;
     left: -0.5em;
-    content: 'â€œ'; }
+    content: '“'; }
   blockquote:after {
-    content: 'â€';
+    content: '”';
     margin-left: -0.05em; }
 
 mark {
@@ -4206,13 +4234,16 @@ input.mdl-button[type="submit"] {
           flex-direction: column;
   font-size: 16px;
   font-weight: 400;
-  min-height: 200px;
+  min-height: 120px;
   overflow: hidden;
-  width: 330px;
+  width: 93%;
   z-index: 1;
   position: relative;
   background: rgb(255,255,255);
   border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:15px;
   box-sizing: border-box; }
 
 .mdl-card__media {
@@ -4222,7 +4253,9 @@ input.mdl-button[type="submit"] {
   background-size: cover;
   background-origin: padding-box;
   background-attachment: scroll;
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+  im
+}
 
 .mdl-card__title {
   -webkit-align-items: center;
@@ -4270,10 +4303,10 @@ input.mdl-button[type="submit"] {
 
 .mdl-card__supporting-text {
   color: rgba(0,0,0, 0.54);
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 18px;
   overflow: hidden;
-  padding: 16px 16px;
+  padding: 0px 16px 5px 16px;
   width: 90%; }
 
 .mdl-card__actions {
@@ -7372,6 +7405,7 @@ input.mdl-button[type="submit"] {
     vertical-align: middle; }
 
 .mdl-layout {
+  background-color: #f4f9f9;
   width: 100%;
   height: 100%;
   display: -webkit-flex;
@@ -7558,7 +7592,7 @@ input.mdl-button[type="submit"] {
   min-height: 64px;
   max-height: 1000px;
   z-index: 3;
-  background-color: rgb(63,81,181);
+  background-color: #3670AA; /*mo changed css here */
   color: rgb(255,255,255);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   transition-duration: 0.2s;
@@ -7566,6 +7600,7 @@ input.mdl-button[type="submit"] {
   transition-property: max-height, box-shadow; }
   @media screen and (max-width: 1024px) {
     .mdl-layout__header {
+
       min-height: 56px; } }
   .mdl-layout--fixed-drawer.is-upgraded:not(.is-small-screen) > .mdl-layout__header {
     margin-left: 240px;
@@ -7602,6 +7637,7 @@ input.mdl-button[type="submit"] {
     .mdl-layout__header {
       display: none; }
     .mdl-layout--fixed-header > .mdl-layout__header {
+
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; } }
@@ -7746,7 +7782,7 @@ input.mdl-button[type="submit"] {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: rgb(63,81,181);
+  background-color: #3670AA;
   overflow-y: hidden;
   overflow-x: scroll; }
   .mdl-layout__tab-bar::-webkit-scrollbar {
@@ -7885,7 +7921,9 @@ input.mdl-button[type="submit"] {
       background-color: rgb(255,255,255); }
 
 .mdl-layout__tab-panel {
-  display: block; }
+  height: auto;
+  display: block; 
+  background-color: #f4f9f9;}
   .mdl-layout.is-upgraded .mdl-layout__tab-panel {
     display: none; }
   .mdl-layout.is-upgraded .mdl-layout__tab-panel.is-active {
