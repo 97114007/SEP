@@ -3,20 +3,22 @@ $(window).ready(function() {
 });
 
 
-var categories = ["Apple iPhone",
-				"Samsung Galaxy",
-				"Bag",
-				"Umbrella",
-				"Laptop",
-				"iPad",
-				"Tablet"];
-var subcats = [["6S, 16gb", "6S, 64gb", "6S, 128gb", "6, 16gb", "6, 64gb", "6, 128gb", "5S, 16gb", "5S, 32gb", "5S, 64gb", "5, 16gb", "5, 32gb"],
-				["S7, 32gb", "S7, 64gb", "S6, 32gb", "S6, 64gb", "S5, 16gb", "S5, 32gb", "S4, 16gb", "S4, 32gb"],
-				["Adidas", "Nike", "Stussy", "Herschel", "Other"],
-				["Polo", "Generic"],
-				["MacBook Air 11\"", "MacBook Air 13\"", "MacBook Pro 13\"", "MacBook Pro 15\"", "Lenovo", "Dell", "HP", "Acer", "Asus", "Surface Book Pro", "Other"],
-				["Mini", "9.7\""],
-				["Surface 3", "Surface 4", "Surface Book", "Samsung Galaxy Tab"]];
+var categories = ["Cards",
+				"Electronics",
+				"Personal Accessories",
+				"Clothing",
+				"Miscellaneous",
+				"Medical",
+				"Sporting goods",
+				"Musical Instruments"];
+var subcats = [["Identification", "Travel", "Bank"],
+				["Mobile Phone", "Labtop", "Tablets", "Camera", "Music player", "USB", "External hard drive", "Charger", "Headphones"],
+				["Wallet", "Purses", "Jewellery", "Glasses", "Sunglasses", "Keys", "Bag", "Luggage", "Towel", "Umbrella"],
+				["Shirt", "Pants", "Underwear", "Shoes", "Socks", "Jacket", "Dress", "Skirt", "Swimwear", "Onesie", "Sleepwear", "Raincoat"],
+				["Book", "Textbook", "Currency", "Mail", "Parcel", "Toy", "Household tools"],
+				["Medicine", "Epipen", "Inhaler", "Stethoscope"],
+				["Ball", "Bat", "Net", "Hoops", "Bicycle"],
+				["Violin", "Flute", "Clarinet", "Piano", "Saxophone", "Percussion", "Keyboard", "Guitar", "Trumpet", "Trombone", "Harmonica", "Accordion", "Kazoo", "Vuvuzela", "Harp", "Cello", "Viola", "French Horn", "Recorder", "Double Bass", "Wintergatan"]];
 
 var colours = ["White", "Black", "Grey", "Red", "Green", "Blue", "Yellow", "Pink", "Teal", "Orange", "Brown", "Silver", "Gold", "Rose Gold", "Space Grey"];
 
