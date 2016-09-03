@@ -1,3 +1,21 @@
+<?php
+
+session_start();
+	include_once("databaseinterface.php");
+	$incorrectCreds = false;
+	if (isset($_POST['loginSet'])) {
+		if (checkLoginCorrect($_POST['userid'], $_POST['pass'])) {
+			$_SESSION['userid'] = $_POST['userid'];
+            $_SESSION['username'] = getNameForID($_POST['userid']);
+			header("Location: main.php");
+		} else {
+			$incorrectCreds=true;
+		}
+	}
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -24,18 +42,19 @@
 <div class="logincontainer">
 <b>Incorrect Login Details.</b>
 </div>
- <form action="#">
+ <form action="login.php" method="POST">
+ <input type="hidden" name="loginSet" value="true"/>
   <!--username-->
     <div class="logincontainer">
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" type="text" name="userid" id="userid">
+        <input class="mdl-textfield__input" type="text" name="userid" id="userid"/>
         <label class="mdl-textfield__label" for="userid">Username</label>
       </div>
     </div>
     <!--password-->
     <div class="logincontainer">
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" type="password" name="pass" id="password">
+        <input class="mdl-textfield__input" type="password" name="pass" id="password"/>
         <label class="mdl-textfield__label" for="password">Password</label>
       </div>
     <div>

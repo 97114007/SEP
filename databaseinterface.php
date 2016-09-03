@@ -1,27 +1,21 @@
 <?php
-$hostname = 'd6q8diwwdmy5c9k9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306' ;
-$dbname = 'etoesn3fmoerrnfa';
-$username = 'tkkwirphqjda79q1';
-$password = 'ytjjlujani3oskc6';
+$hostname = 'localhost' ;
+$dbname = 'utslf';
+$username = 'bob';
+$password = '';
 
-$con = mysqli_connect($hostname, $username, $password, $dbname);
+$con = new mysqli($hostname, $username, $password, $dbname);
 
 if(!$con){
 	
-	die('Connection could not be established: '.mysql_error());
+	die('Connection could not be established: '.$con->connect_error);
 
 }
 
-$selected_db = mysqli_select_db($dbname, $con);
-
-if(!$selected_db){
-	
-	die('Database'.DB_NAME.'can\'t be used: '.mysql_error());
-}
 
 function getNameForID($ID) {
       $ID = bin2hex($ID);
-      $q = doQuery("SELECT GivenName FROM User WHERE UserID=UNHEX('".$ID."')");
+      $q = doQuery("SELECT GivenName FROM user WHERE UserID=UNHEX('".$ID."')");
       if (!$q) {
          return null;
       }
@@ -31,7 +25,7 @@ function getNameForID($ID) {
   function checkLoginCorrect($ID, $Pass) {
       $ID = bin2hex($ID);
       $Pass = bin2hex($Pass);
-      $q = doQuery("SELECT UserID FROM User WHERE UserID=UNHEX('".$ID."') AND UserPassword=UNHEX('".$Pass."')");
+      $q = doQuery("SELECT UserID FROM user WHERE UserID=UNHEX('".$ID."') AND UserPassword=UNHEX('".$Pass."')");
       if (!$q) {
          return false;
       }
@@ -46,8 +40,8 @@ function getNameForID($ID) {
       $Location = bin2hex($Location);
       $Date = bin2hex($Date);
       $Comment = bin2hex($Comment);
-      $q = doQuery("INSERT INTO LostItem (Category, SubCategory, Colour, DayLost, LocationLost, Comments) VALUES(UNHEX('".$Cat."'), UNHEX('".$SubCat."'), UNHEX('".$Colour."'), UNHEX('".$Date."'), UNHEX('".$Location."'), UNHEX('".$Comment."'))");
-      $q2 = doQuery("SELECT LAST_INSERT_ID() FROM LostItem");
+      $q = doQuery("INSERT INTO lostitem (Category, SubCategory, Colour, DayLost, LocationLost, Comments) VALUES(UNHEX('".$Cat."'), UNHEX('".$SubCat."'), UNHEX('".$Colour."'), UNHEX('".$Date."'), UNHEX('".$Location."'), UNHEX('".$Comment."'))");
+      $q2 = doQuery("SELECT LAST_INSERT_ID() FROM lostitem");
       if (!$q || !$q2) {
          return -1;
       }
@@ -58,7 +52,7 @@ function getNameForID($ID) {
   function createClaim($UserID, $ItemID) {
       $UserID = bin2hex($UserID);
       $ItemID = bin2hex($ItemID);
-      $q = doQuery("INSERT INTO Claim (UserID, LostItemID) VALUES(UNHEX('".$UserID."'), UNHEX('".$ItemID."'))");
+      $q = doQuery("INSERT INTO claim (UserID, LostItemID) VALUES(UNHEX('".$UserID."'), UNHEX('".$ItemID."'))");
       if (!$q) {
          return false;
       }
@@ -68,7 +62,7 @@ function getNameForID($ID) {
 
   function sendRecentItems($UserID) {
       $UserID = bin2hex($UserID);
-      $queryString = "SELECT LostItem.Category, LostItem.SubCategory, LostItem.Colour, LostItem.DayLost, LostItem.LocationLost, Claim.ClaimStatus FROM LostItem, Claim WHERE Claim.LostItemID=LostItem.LostItemID AND Claim.UserID=UNHEX('".$UserID."') ORDER BY LostItem.DayLost DESC LIMIT 4";
+      $queryString = "SELECT lostitem.Category, lostitem.SubCategory, lostitem.Colour, LostItem.DayLost, lostitem.LocationLost, claim.ClaimStatus FROM lostitem, claim WHERE claim.LostItemID=LostItem.LostItemID AND claim.UserID=UNHEX('".$UserID."') ORDER BY lostitem.DayLost DESC LIMIT 4";
       $q = doQuery($queryString);
       if (!$q) {
          die('Error: '.mysql_error());
@@ -86,5 +80,8 @@ function getNameForID($ID) {
     $s = $con->query($q);
     return $s;
   }
-  
+  function sendError() {
+	  
+	echo  'Error2';
+  }
   ?>

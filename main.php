@@ -1,3 +1,12 @@
+<?php
+  session_start();
+  if (!isset($_SESSION['userid'])) {
+    header("Location: index.php");
+  } else {
+    include_once("databaseinterface.php");
+  }
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -8,6 +17,15 @@
       <link rel="stylesheet" href="styles.css">
       <!--link to master javascript file-->
       <script src="functions.js"></script>
+	  
+	  <!--Reconfirming login details-->
+	  <script>
+		var userid = "<?php echo $_SESSION['userid']; ?>";
+		var username = "<?php echo $_SESSION['username']; ?>";
+		</script>
+		<script src="controller.js"></script>
+		<script src="models.js"></script>
+		
       <!--link to google material design icon library-->
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
       <!--this makes sure the website scales when viewed on different displays-->
@@ -48,12 +66,12 @@
       <div class="page-content">
             
                <!--new form button-->
-    <div class="addButton">
+    <a href="lostitemform.php"><div class="addButton">
       <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
        <i class="material-icons">add</i>
       </button>
-    </div>
-            
+    </div></a>
+            <!--<placeholder><p>No current items</p></placeholder>-->
             <div class="mdl-card mdl-shadow--3dp">
             <div class="mdl-card__title">
               <h2 class="mdl-card__title-text">iPhone 6</h2>

@@ -1,3 +1,12 @@
+<?php
+  session_start();
+  if (!isset($_SESSION['userid'])) {
+    header("Location: index.php");
+  } else {
+    include_once("databaseinterface.php");
+  }
+?>
+
 <!doctype html>
 <html lang="en">
    <head>
