@@ -1,8 +1,8 @@
 <?php
-$hostname = 'localhost' ;
-$dbname = 'utslf';
-$username = 'bob';
-$password = '';
+$hostname = 'us-cdbr-iron-east-04.cleardb.net:3306' ;
+$dbname = 'heroku_f15874510c5d18a';
+$username = 'b67f01540effa5';
+$password = 'c6efee0b';
 
 $con = new mysqli($hostname, $username, $password, $dbname);
 
