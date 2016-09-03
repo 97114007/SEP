@@ -20,6 +20,50 @@ div.addButton {
   z-index: 900;
 }
 
+div.logocontainer {
+  width: 200px;
+  height: 100%;
+  margin-bottom:50px;
+  display: flex;
+  justify-content: center;
+}
+div.logincontainer {
+  width: 200px;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  div.buttoncontainer {
+  width: 200px;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:20px;
+}
+
+div.cen {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
 
 b {
   color:#ff6f59;
@@ -4035,7 +4079,7 @@ input.mdl-button[type="submit"] {
     background: rgb(255,255,255); }
   .mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
     color: rgb(255,255,255);
-    background-color: rgb(255,64,129); }
+    background-color: #3670AA; }
 
 .mdl-button[disabled][disabled], .mdl-button.mdl-button--disabled.mdl-button--disabled {
   color: rgba(0,0,0, 0.26);
@@ -10226,7 +10270,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
   .mdl-textfield--floating-label.is-focused .mdl-textfield__label,
   .mdl-textfield--floating-label.is-dirty .mdl-textfield__label,
   .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
-    color: rgb(63,81,181);
+    color: #3670AA;
     font-size: 12px;
     top: 4px;
     visibility: visible; }
@@ -10238,7 +10282,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     color: rgb(213,0,0);
     font-size: 12px; }
   .mdl-textfield__label:after {
-    background-color: rgb(63,81,181);
+    background-color: #3670AA;
     bottom: 20px;
     content: '';
     height: 2px;
