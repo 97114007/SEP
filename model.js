@@ -133,4 +133,4 @@ function isValidDate(dateString) {
 
 	return day > 0 && day <= monthLength[month - 1];
 };
-Contact GitHub API Training Shop Blog About
+
