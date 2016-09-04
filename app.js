@@ -45,11 +45,11 @@ function duplicate(id) {
 	return $(id).clone().removeClass("hidden");
 }
 
-function showPage(pageName) {
-	$(".mdl-layout__tab-panel").each(function(i, val) {
-		$(this).removeClass("is-active");
-		if ($(this).attr("id") == pageName) {
-			$(this).addClass("is-active");
-		}
-	});
-}
+//function showPage(pageName) {
+//	$(".mdl-layout__tab-panel").each(function(i, val) {
+//		$(this).removeClass("is-active");
+//		if ($(this).attr("id") == pageName) {
+//			$(this).addClass("is-active");
+//		}
+//	});
+//}
