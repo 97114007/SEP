@@ -22,11 +22,10 @@ session_start();
 
   <head>
       <title>Login</title>
-      <!--link to the main css stylesheet-->
-      <!--<link rel="stylesheet" href="styles.css">-->
-      <style>@import url('style.css’);</style>
       <!--Google Material Design Lite css import-->
       <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-pink.min.css">
+      <!--link to the main css stylesheet-->
+      <link rel="stylesheet" href="styles.css">
       <!--Google Material Design Lite javascript import-->
       <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
       <!--Google Material Design Lite icon library import-->
