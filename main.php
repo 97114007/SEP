@@ -53,7 +53,7 @@
 
     <!-- Tabs -->
        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-        <a href="#current" class="mdl-layout__tab is-active">Current</a>
+        <a href="#overview" class="mdl-layout__tab is-active">Current</a>
        <a href="#history" class="mdl-layout__tab">History</a>
       </div>
      </header>
@@ -62,7 +62,7 @@
     <main class="mdl-layout__content">
 
     <!--current-->  
-    <section class="mdl-layout__tab-panel is-active" id="current">
+    <div class="mdl-layout__tab-panel is-active" id="overview">
 
     
       <div class="page-content">
@@ -74,34 +74,27 @@
       </button>
     </div></a>
             <!--<placeholder><p>No current items</p></placeholder>-->
-            <div class="mdl-card mdl-shadow--3dp">
-            <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text">iPhone 6</h2>
-            </div>
-            <div class="mdl-card__supporting-text">
-              Date Lost: 21 August, 2016
-            </div>
-            <div class="mdl-card__supporting-text">
-              Status: <b>Pending review by staff</b>
-            </div>
-            </div>
             
-            <div class="mdl-card mdl-shadow--3dp">
-            <div class="mdl-card__title">
-              <h2 class="mdl-card__title-text">iPhone 6</h2>
-            </div>
-            <div class="mdl-card__supporting-text">
-              Date Lost: 21 August, 2016
-            </div>
-            <div class="mdl-card__supporting-text">
-              Status: <b>Pending review by staff</b>
-            </div>
+      
+        
+          <section id="optionCards" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
 
+          </section>
+          <section id="lostItemCard" class="hidden section--center mdl-grid mdl-grid--no-spacing mdl-shadow--3dp">
+            <header style="width:2%;" class="mdl-cell mdl-cell--1-col mdl-color-text--white">
+            </header>
+            <div style="width:98%; height:215px;" class="itemCard mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4 class="itemName">Item Name</h4>
+                <span>Description of item goes here.</span>
+              </div>
             </div>
+          </section>
+          
+        </div>
 
- 
-
-    </div>
+	
+  
     </section>
 
     <!--history-->  
