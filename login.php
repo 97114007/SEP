@@ -23,7 +23,7 @@ session_start();
   <head>
       <title>Login</title>
       <!--link to the main css stylesheet-->
-      <link rel="stylesheet" href="newstyles.css">
+      <link rel="stylesheet" href="styles.css">
       <!--Google Material Design Lite css import-->
       <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-pink.min.css">
       <!--Google Material Design Lite javascript import-->
