@@ -14,7 +14,7 @@
   <head>
       <title>My Lost Items</title>
       <!--link to the master css stylesheet-->
-      <link rel="stylesheet" href="styles.css">
+      <link type="text/css" rel="stylesheet" href="styles.css">
       <!--link to master javascript file-->
       <script src="functions.js"></script>
 	  
