@@ -65,7 +65,7 @@
     <div class="mdl-layout__tab-panel is-active" id="overview">
 
     
-      <div class="page-content">
+      <!--<div class="page-content">-->
             
                <!--new form button-->
     <a href="lostitemform.php"><div class="addButton">
@@ -91,11 +91,11 @@
             </div>
           </section>
           
-        </div>
+      <!--</div>-->
 
 	
   
-    </section>
+    <!--</section>-->
 
     <!--history-->  
     <section class="mdl-layout__tab-panel" id="history">
