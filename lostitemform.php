@@ -15,10 +15,10 @@
       <meta name="description" content="UTS Lost and Found web app">
       <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=0">
       <title>UTS Lost and Found</title>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-      <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-pink.min.css" />
-      <link rel="stylesheet" href="styles.css">
+      <link type = "text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+      <link type = "text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link type = "text/css" rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-pink.min.css" />
+      <link type ="text/css" rel="stylesheet" href="styles.css">
       <style>
 		table {
 			width:100%; 
@@ -92,9 +92,9 @@
                            <a href="main.php" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--blue">
                            Cancel
                            </a>
-                           <input type="submit"><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect mdl-color--blue">
+                           <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect mdl-color--blue">
                            Submit
-                           </button></input>
+                           </button>
                         </form>
                      </div>
                   </div>
