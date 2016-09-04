@@ -15,7 +15,7 @@ if($con->connect_errno){
 
 function getNameForID($ID) {
       $ID = bin2hex($ID);
-      $q = doQuery("SELECT GivenName FROM user WHERE UserID=UNHEX('".$ID."')");
+      $q = doQuery("SELECT GivenName FROM User WHERE UserID=UNHEX('".$ID."')");
       if (!$q) {
          return null;
       }
