@@ -1,12 +1,27 @@
 /*
 `* ORIGINAL CSS
  */
+
 main {
   background-color: #f4f9f9;
 }
 
 a {
   color: white;
+}
+
+#optionCards {
+  height:0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.itemCard {
+  height:350px;
+}
+
+.itemCard.mdl-card {
+  height: 100px;
 }
 
 div.placeholder {
@@ -77,6 +92,8 @@ b {
   color:#ff6f59;
   font-weight: bold;
 }
+
+
 
 /*Below contains edited elements of Google's Material Design Lite framework*/
 /**
