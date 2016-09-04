@@ -1,3 +1,18 @@
+<?php
+	session_start();
+	include_once("DatabaseInterface.php");
+	$incorrectCreds = false;
+	if (isset($_POST['loginSet'])) {
+		if (checkLoginCorrect($_POST['userid'], $_POST['pass'])) {
+			$_SESSION['userid'] = $_POST['userid'];
+            $_SESSION['username'] = getNameForID($_POST['userid']);
+			header("Location: main.php");
+		} else {
+			$incorrectCreds=true;
+		}
+	}
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -22,9 +37,11 @@
     <img src="images/logo.png" alt="logo" height="50%" width="50%">
 </div>
 <div class="logincontainer">
-<b>Incorrect Login Details.</b>
+  <input type="hidden" name="loginSet" value="true"/>
+  <p class="bottomSpacer2 <?php if (!$incorrectCreds) { echo "hidden"; } ?>">
+  <b>Incorrect Login Details.</b></p>
 </div>
- <form action="#">
+ <form action="login.php" method="POST">
   <!--username-->
     <div class="logincontainer">
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
@@ -39,13 +56,14 @@
         <label class="mdl-textfield__label" for="password">Password</label>
       </div>
     <div>
-</form>
+
 <!--loginbutton-->
     <div class="buttoncontainer">
                   <button class="mdl-button resizableItem mdl-js-button mdl-button--raised mdl-button--accent mdl-js-ripple-effect">
                     Login
                   </button>
     </div>
+</form>
 </div>
   </body>
 </html>
