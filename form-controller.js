@@ -77,7 +77,7 @@ function initLocations() {
 	});
 }
 
-// This function was sourced from Stackoverflow:
+// The function below for date validation was sourced from Stackoverflow: http://stackoverflow.com/questions/6177975/how-to-validate-date-with-format-mm-dd-yyyy-in-javascript
 function isValidDate(dateString) {
 	if(!/^\d{1,2}\/\d{1,2}\/\d{4}$/.test(dateString))
 		return false;
