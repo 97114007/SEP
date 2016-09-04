@@ -34,7 +34,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
-
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
 
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" id="landing">
@@ -62,7 +61,7 @@
               </div>
             </div>
           </section>
-          <a id="addButton" href="lostitemform.php" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+          <a id="addButton" href="lodge-form.php" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
             <i class="material-icons">add</i>
           </a>
         </div>
@@ -79,5 +78,12 @@
 
 
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+    <script>
+      var userid = "<?php echo $_SESSION['userid']; ?>";
+      var username = "<?php echo $_SESSION['username']; ?>";
+    </script>
+    <script src="controller.js"></script>
   </body>
+
 </html>
