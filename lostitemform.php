@@ -3,7 +3,7 @@
   if (!isset($_SESSION['userid'])) {
     header("Location: index.php");
   } else {
-    include_once("DatabaseInterface.php");
+    include_once("databaseinterface.php");
   }
 ?>
 <!doctype html>
@@ -76,4 +76,8 @@
     <script src="https://code.getmdl.io/1.2.0/material.min.js"></script>
     <script src="form-controller.js"></script>
   </body>
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> origin/master
