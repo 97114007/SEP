@@ -13,10 +13,12 @@
 
   <head>
       <title>My Lost Items</title>
-      <!--link to the master css stylesheet-->
-      <link type="text/css" rel="stylesheet" href="styles.css">
-      <!--link to master javascript file-->
-      <script src="functions.js"></script>
+      <!--link to the main css stylesheet-->
+      <link rel="stylesheet" href="newstyles.css">
+      <!--Google Material Design Lite css import-->
+      <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-pink.min.css">
+      <!--Google Material Design Lite javascript import-->
+      <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
 	  
 	  <!--Reconfirming login details-->
 	  <script>
@@ -26,7 +28,7 @@
 		<script src="controller.js"></script>
 		<script src="models.js"></script>
 		
-      <!--link to google material design icon library-->
+      <!--Google Material Design Lite icon icon library import-->
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
       <!--this makes sure the website scales when viewed on different displays-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
