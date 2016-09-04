@@ -39,9 +39,9 @@ session_start();
 <div class="logocontainer">
     <img src="images/logo.png" alt="logo" height="50%" width="50%">
 </div>
-<div class="logincontainer">
+<!--<div class="logincontainer">
 <b>Incorrect Login Details.</b>
-</div>
+</div>-->
  <form action="login.php" method="POST">
  <input type="hidden" name="loginSet" value="true"/>
   <!--username-->

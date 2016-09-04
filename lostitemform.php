@@ -20,6 +20,13 @@
       <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-pink.min.css" />
       <link rel="stylesheet" href="styles.css">
       <style>
+		table{
+			style="width:100%"; 
+			align="center";
+		}
+		td{
+			text-align: center;
+		}
       </style>
    </head>
    <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
@@ -27,9 +34,11 @@
       <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" id="lodgeForm">
          <header class="mdl-layout__header  mdl-layout__header--scroll mdl-color--grey mdl-color-text--white-700 mdl-shadow--2dp">
             <div class="mdl-layout__header-row">
+			<a href="main.php">
               <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_backward</i>
               </button>
+			  <a/>
           &nbsp;&nbsp;&nbsp;&nbsp;
                <span class="mdl-layout-title">New Lost Item Form</span>
             </div>
@@ -42,7 +51,7 @@
                         <h4>Lost Item details</h4>
                         <form action="LFModules.php" onsubmit="return validateData()" method="POST">
                            <input type="hidden" name="module" value="submitItemClaim" />
-                           <table style="width:100%" align="center">
+                           <table>
                               <tr>
                                  <td><span>Category*: </span></td>
                                  <td><select name="category" name="category" id="category"></select>
@@ -64,9 +73,9 @@
                                 <p/></td>
                               </tr>
                               <tr>
-                                 <td><span> Date Lost (DD/MM/YY)*: </span></td>
+                                 <td><span> Date Lost (DD/MM/YYYY)*: </span></td>
                                  <td>  <span class="mdl-textfield mdl-js-textfield" style="width:150px;">
-                                 <input class="mdl-textfield__input" type="text" pattern="[0-3]{0,1}[0-9]{1}/\d{1,2}/\d{4}" name="date" id="date">
+                                 <input class="mdl-textfield__input" type="text" pattern="\d{1,2}/\d{1,2}/\d{4}" name="date" id="date">
                                  <label class="mdl-textfield__label" for="date"></label>
                                  </span>
                               <p/></td>
