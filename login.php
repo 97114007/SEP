@@ -28,7 +28,7 @@ session_start();
       <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-pink.min.css">
       <!--Google Material Design Lite javascript import-->
       <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
-      <!--Google Material Design Lite import library-->
+      <!--Google Material Design Lite icon library import-->
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
       <!--this makes sure the website scales when viewed on different displays-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
