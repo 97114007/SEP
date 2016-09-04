@@ -61,7 +61,7 @@
                     <a href="main.php" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
                       Cancel
                     </a>
-                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
+                    <button type="submitItemClaim" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
                       Submit
                     </button>
                   </form>
