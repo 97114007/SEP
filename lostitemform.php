@@ -93,9 +93,9 @@
                            <a href="main.php" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mdl-color--blue">
                            Cancel
                            </a>
-                           <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect mdl-color--blue">
+                           <input type="submit"><button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect mdl-color--blue">
                            Submit
-                           </button>
+                           </button></input>
                         </form>
                      </div>
                   </div>
