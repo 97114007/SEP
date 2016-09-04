@@ -38,7 +38,7 @@
 </div>
 <div class="logincontainer">
   <input type="hidden" name="loginSet" value="true"/>
-  <p class="bottomSpacer2 <?php if (!$incorrectCreds) { echo "hidden"; } ?>">
+  <p <?php if (!$incorrectCreds) { echo "hidden"; } ?>">
   <b>Incorrect Login Details.</b></p>
 </div>
  <form action="login.php" method="POST">
