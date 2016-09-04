@@ -21,10 +21,9 @@
       <link rel="stylesheet" href="styles.css">
       <style>
 		table {
-			style="width:100%"; 
-			align="center";
+			width:100%; 
 		}
-		td {
+		table, td {
 			text-align: center;
 		}
       </style>
