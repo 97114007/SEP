@@ -35,31 +35,19 @@
   </head>
 
 
-  <body>
- <!-- Header and tabs -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
-      
-      <header class="mdl-layout__header">
-      
-      <!-- Icon -->
-      <div class="mdl-layout-icon"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_backward</i>
-              </button></div>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
 
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header" id="landing">
+      <header class="mdl-layout__header  mdl-layout__header--scroll mdl-color--primary mdl-shadow--2dp">
         <div class="mdl-layout__header-row">
-      <!-- Title -->
-          <span class="mdl-layout-title">My Lost Items</span>
+          <span class="mdl-layout-title">UTS Lost & Found</span>
         </div>
-
-    <!-- Tabs -->
-       <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-        <a href="#overview" class="mdl-layout__tab is-active">Current</a>
-       <a href="#history" class="mdl-layout__tab">History</a>
-      </div>
-     </header>
-
-    <!-- Tab functionality -->
-    <main class="mdl-layout__content">
+        <div style="position:right;"class="mdl-layout__tab-bar mdl-layout--fixed-tabs mdl-js-ripple-effect"><!--mdl-layout--fixed-tabs !-->
+          <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
+          <a href="#history" class="mdl-layout__tab">History</a>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
         <div class="mdl-layout__tab-panel is-active" id="overview">
           <section id="optionCards" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
 
@@ -74,7 +62,7 @@
               </div>
             </div>
           </section>
-          <a id="addButton" href="lostitemform.php" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+          <a id="addButton" href="lodge-form.php" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
             <i class="material-icons">add</i>
           </a>
         </div>
@@ -86,8 +74,16 @@
         </div>
 
       </main>
- 
-</div>
+    </div>
 
+
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+    <script>
+      var userid = "<?php echo $_SESSION['userid']; ?>";
+      var username = "<?php echo $_SESSION['username']; ?>";
+    </script>
+    <script src="controller.js"></script>
   </body>
 </html>
