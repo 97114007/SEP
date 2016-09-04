@@ -3,7 +3,7 @@
   if (!isset($_SESSION['userid'])) {
     header("Location: index.php");
   } else {
-    include_once("DatabaseInterface.php");
+    include_once("databaseinterface.php");
   }
 ?>
 <!doctype html>
