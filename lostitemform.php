@@ -20,11 +20,11 @@
       <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-pink.min.css" />
       <link rel="stylesheet" href="styles.css">
       <style>
-		table{
+		table {
 			style="width:100%"; 
 			align="center";
 		}
-		td{
+		td {
 			text-align: center;
 		}
       </style>
