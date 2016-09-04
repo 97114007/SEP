@@ -60,23 +60,7 @@
 
     <!-- Tab functionality -->
     <main class="mdl-layout__content">
-
-    <!--current-->  
-    <div class="mdl-layout__tab-panel is-active" id="overview">
-
-    
-      <!--<div class="page-content">-->
-            
-               <!--new form button-->
-    <a href="lostitemform.php"><div class="addButton">
-      <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-       <i class="material-icons">add</i>
-      </button>
-    </div></a>
-            <!--<placeholder><p>No current items</p></placeholder>-->
-            
-      
-        
+        <div class="mdl-layout__tab-panel is-active" id="overview">
           <section id="optionCards" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
 
           </section>
@@ -90,21 +74,18 @@
               </div>
             </div>
           </section>
-          
-      <!--</div>-->
+          <a id="addButton" href="lodge-form.php" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+            <i class="material-icons">add</i>
+          </a>
+        </div>
 
-	
-  
-    <!--</section>-->
+		<!-- History tab !-->        
 
-    <!--history-->  
-    <section class="mdl-layout__tab-panel" id="history">
-      
-      <div class="page-content"> <div class="placeholder"><b>Error:</b> This functionality has not been implemented in this project release.</div>
+        <div class="mdl-layout__tab-panel mdl-color--grey-100 mdl-color-text--grey-700" id="history">
+            <h4>Nothing here at the moment...</h3>
+        </div>
 
-      </div>
-    </section>
-  </main>
+      </main>
  
 </div>
 
