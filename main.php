@@ -79,11 +79,5 @@
 
 
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-    <script src="https://code.getmdl.io/1.2.0/material.min.js"></script>
-    <script>
-      var userid = "<?php echo $_SESSION['userid']; ?>";
-      var username = "<?php echo $_SESSION['username']; ?>";
-    </script>
-    <script src="controller.js"></script>
   </body>
 </html>
