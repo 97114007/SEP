@@ -41,9 +41,9 @@ function addItem(idx, name, desc) {
 	$(itemCard).insertAfter("#optionCards");
 }
 
-//function duplicate(id) {
-//	return $(id).clone().removeClass("hidden");
-//}
+function duplicate(id) {
+	return $(id).clone().removeClass("hidden");
+}
 
 function showPage(pageName) {
 	$(".mdl-layout__tab-panel").each(function(i, val) {
