@@ -76,8 +76,5 @@
     <script src="https://code.getmdl.io/1.2.0/material.min.js"></script>
     <script src="form-controller.js"></script>
   </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> origin/master
+

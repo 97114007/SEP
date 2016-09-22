@@ -52,4 +52,4 @@ function showPage(pageName) {
 			$(this).addClass("is-active");
 		}
 	});
-}
+//}
